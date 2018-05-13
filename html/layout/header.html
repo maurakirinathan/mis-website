@@ -12,12 +12,17 @@
     <div id="headerbar"></div>
     <script>
         window.onload = function () {
-            $.get("../nav/header.html", function (data) {
+            $.get("../nav/header_nav.html", function (data) {
                 $("#headerbar").html(data);
             })
         }
-    </script>
 
+
+    </script>
+    <div class="wrapper row">
+            <a href="http://mis.scorelab.org/"><img src="http://mis.scorelab.org/wp-content/uploads/2016/07/ucsc.png"
+                                                    alt="logo"></a>
+    </div>
     <div class="wrapper row0">
         <div class="tab">
             <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
@@ -35,8 +40,7 @@
 
     <!-- Tab content -->
     <div id="Home" class="tabcontent">
-        <h3>Home</h3>
-        <p>Home</p>
+
         <head>
             <script type="text/javascript" src="../../js/jquery.js"></script>
             <script>
@@ -92,3 +96,4 @@
         <p>Contact</p>
     </div>
 
+    <div id="footerbar"></div>

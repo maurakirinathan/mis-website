@@ -35,3 +35,21 @@
     border: 1px solid #ccc;
     border-top: none;
 }
+
+/*logo on top*/
+div.logo-wrapper{ float: left; }
+div.logo-wrapper img{ display: block; }
+
+.shortcode1-2 {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
+
+div.frontpage-block {
+    background: none repeat scroll 0 0 #64A0BB;
+    color: #FFFFFF;
+    margin: 0px 0px 20px 0px;
+    padding: 10px;
+    height: 380px;
+}
