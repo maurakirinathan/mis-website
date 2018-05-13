@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-<body>
 
 
 
@@ -38,8 +37,8 @@
         .tabcontent_program {
             color: white;
             display: none;
-            padding: 100px 20px;
-            height: 100%;
+ /*           padding: 100px 20px;*/
+         /*   height: 100%;*/
         }
 
         #Home1 {background-color: red;}
@@ -58,6 +57,10 @@
             border: 1px solid #dddddd;
             text-align: left;
             padding: 8px;
+
+        }
+        th{
+            background-color: #0f067a;
         }
 
         tr:nth-child(even) {
@@ -68,44 +71,185 @@
 </head>
 <body>
 
-<div>
-    <h2>ACADEMIC PROGRAMME</h2>
-    <h3>Guidelines for Volume of Learning</h3>
-
-<p>This Programme has a list of online courses and each such course has a course code, a course title, and a credit value as given in the regulation. The volume of learning correspond to such credit values shall be interpreted based on Table</p>
-
-
-    <table>
-        <tr>
-            <th>Course/Subject Description</th>
-            <th>Credit Value</th>
-            <th>Staff-Student Contact Hours</th>
-            <th>Notional Hours (direct staff-student contact hours and independent learning)</th>
-        </tr>
-        <tr>
-            <td>Lecture course</td>
-            <td>1</td>
-            <td>15</td>
-            <td>50</td>
-        </tr>
-        <tr>
-            <td>Laboratory course</td>
-            <td>1</td>
-            <td>30</td>
-            <td>50</td>
-        </tr>
-        <tr>
-            <td>Individual Project/ Independent Studies</td>
-            <td>5</td>
-            <td>Variable</td>
-            <td>500</td>
-        </tr>
-    </table>
-
-
-    <p></p>
+</p>
 </div>
+<div class="wrapper row3">
 
+    <div class="sixteen columns mt10 mb20"><h1 class="gdl-page-title gdl-title title-color">MASTER OF CYBERSECURITY:
+        DISTANCE MASTER PROGRAM IN CYBER SECURITY
+    </h1>
+        <div class="gdl-page-caption gdl-divider"></div>
+    </div>
+
+    <div class="gdl-page-content"><div class="shortcode1">
+        <div class="frontpage-block">
+            <h3>GUIDELINES FOR VOLUME OF LEARNING</h3>
+            <p>This Programme has a list of online courses and each such course has a course code, a course title, and a credit value as given in the regulation.
+                The volume of learning correspond to such credit values shall be interpreted based on Table</p>
+            <table>
+                <tr>
+                    <th>Course/Subject Description</th>
+                    <th>Credit Value</th>
+                    <th>Staff-Student Contact Hours</th>
+                    <th>Notional Hours (direct staff-student contact hours and independent learning)</th>
+                </tr>
+                <tr>
+                    <td>Lecture course</td>
+                    <td>1</td>
+                    <td>15</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Laboratory course</td>
+                    <td>1</td>
+                    <td>30</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Individual Project/ Independent Studies</td>
+                    <td>5</td>
+                    <td>Variable</td>
+                    <td>500</td>
+                </tr>
+            </table>
+            <ul>
+                <li>The above guidelines are based on the recommendations given in the Sri Lanka Qualifications Framework (SLQF).</li>
+           <li>The minimum number of credits per course/subject is one.</li>
+           <li>One credit is considered equivalent to 50 notional learning hours for an online course and laboratory course. </li>
+           <li>In the case of project work/ Independent Studies, one credit is considered equivalent to a minimum of 100 notional hours.</li>
+           <li>The Senate shall have the power to make changes to the list of courses, course codes, course titles, and credit values.</li>
+           <li>The syllabus applicable to any course shall be prescribed by the School from time-to-time and as approved by the Academic Syndicate.</li>
+           <li>Each student shall submit Assignments as part of Continuous Assessment set by the School.</li>
+            </ul>
+    </div>
+        <div class="shortcode1">
+            <div class="frontpage-block">
+                <h6>SEMESTERS AND COURSES</h6>
+                <button class="tablink_program" onclick="openPage('semester1', this, 'blue')" id="defaultOpen">SEMESTER 1</button>
+                <button class="tablink_program" onclick="openPage('semester2', this, 'blue')">SEMESTER 2</button>
+                <button class="tablink_program" onclick="openPage('semester3', this, 'blue')">SEMESTER 3</button>
+                <button class="tablink_program" onclick="openPage('semester4', this, 'blue')">SEMESTER 4</button>
+
+                <div id="semester1" class="tabcontent_program">
+                    <p>The following 5 core courses shall be offered</p>
+                    <table>
+                        <tr>
+                            <th>Course</th>
+                            <th>Credits</th>
+                        </tr>
+                        <tr>
+                            <td>MC1001: Principles of Cybersecurity</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>MC1002: Cryptographic Systems</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>MC1003: Network protocols standards</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>MC1004: Network design and performance</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>MC1005: Special Topics in Cybersecurity</td>
+                            <td>2</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="semester2" class="tabcontent_program">
+                    <p>The following 4 core courses shall  be offered</p>
+                    <table>
+                        <tr>
+                            <th>Course</th>
+                            <th>Credits</th>
+                        </tr>
+                        <tr>
+                            <td>MC2001: Database Security</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>MC2002: Malware and Software Vulnerability Analysis</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>MC2003: Network Security</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>MC2004: Security in Mobile and Wireless Networks</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>MC1005: Continuation of the Special Topics in Cybersecurity of the First Semester</td>
+                            <td>*Continuation of the course in the First Semester</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="semester3" class="tabcontent_program">
+                    <p>The following 4 compulsory courses shall be offered</p>
+                    <table>
+                        <tr>
+                            <th>Course</th>
+                            <th>Credits</th>
+                        </tr>
+                        <tr>
+                            <td>MC3201: Digital Forensic</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>MC3002: Cybercrime and Legislation</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>MC3003: Data Mining and Open Source intelligence</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>MC3004: Incident Management</td>
+                            <td>2</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="semester4" class="tabcontent_program">
+                    <p>The following 3 compulsory course shall be offered</p>
+                    <table>
+                        <tr>
+                            <th>Course</th>
+                            <th>Credits</th>
+                        </tr>
+                        <tr>
+                            <td>MC4001:  Security Auditing and Risk Management</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>MC4002: Network Troubleshooting and Hardening</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>MC4003: Independent Studies in Cybersecurity</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>MC3004: Incident Management</td>
+                            <td>2</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <p style="text-align: justify;"><strong>University of Colombo School of Computing (UCSC) is government own leading academic institute in the south Asian region in the area of computer science. In striving for excellence in education and research, the UCSC has always attempted to foresee the needs of the region and the developing world as a whole. </strong></p>
+        <p style="text-align: justify;"><strong>Competency of the academic staff is one of the crucial factors in determining the quality of the educational and research process. The UCSC presently has over 20 senior lecturers with&nbsp; doctoral qualifications and a further 15 with masters qualifications. </strong></p>
+    </div>
+
+</div>
+<!--
 <button class="tablink_program" onclick="openPage('Home1', this, 'red')">Home1</button>
 <button class="tablink_program" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
 <button class="tablink_program" onclick="openPage('Contact', this, 'blue')">Contact</button>
@@ -129,7 +273,7 @@
 <div id="About" class="tabcontent_program">
     <h3>About</h3>
     <p>Who we are and what we do.</p>
-</div>
+</div>-->
 
 <script>
     function openPage(pageName,elmnt,color) {
