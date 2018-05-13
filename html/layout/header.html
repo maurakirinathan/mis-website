@@ -1,9 +1,9 @@
 <!-- Tab links -->
 
 
-<link href="../css/style.css" rel="stylesheet">
-<script type="text/javascript" src="../js/all.js"></script>
-<script type="text/javascript" src="../js/jquery.js"></script>
+<link href="../../css/style.css" rel="stylesheet">
+<script type="text/javascript" src="../../js/all.js"></script>
+<script type="text/javascript" src="../../js/jquery.js"></script>
 
 
 <div class="tab">
@@ -23,11 +23,29 @@
 <div id="Home" class="tabcontent">
     <h3>Home</h3>
     <p>Home</p>
+    <head>
+        <script type="text/javascript" src="../js/jquery.js"></script>
+        <script>
+            $(function () {
+                $("#includedIndex").load("../../html/index.html");
+            });
+        </script>
+    </head>
+    <div id="includedIndex"></div>
 </div>
 
 <div id="Program" class="tabcontent">
     <h3>Program</h3>
     <p>Program</p>
+    <head>
+        <script type="text/javascript" src="../../js/jquery.js"></script>
+        <script>
+            $(function () {
+                $("#includedprogram").load("../../html/program.html");
+            });
+        </script>
+    </head>
+    <div id="includedprogram"></div>
 </div>
 
 <div id="Admissions" class="tabcontent">
