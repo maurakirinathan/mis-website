@@ -2,12 +2,31 @@
 <html>
 
 
-
-
 <head>
+    <script>
+        function openPage(pageName, elmnt, color) {
+            var i, tabcontent_program, tablink_programs;
+            tabcontent_program = document.getElementsByClassName("tabcontent_program");
+            for (i = 0; i < tabcontent_program.length; i++) {
+                tabcontent_program[i].style.display = "none";
+            }
+            tablink_programs = document.getElementsByClassName("tablink_program");
+            for (i = 0; i < tablink_programs.length; i++) {
+                tablink_programs[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        * {box-sizing: border-box}
+        * {
+            box-sizing: border-box
+        }
 
         /* Set height of body and the document to 100% */
         body, html {
@@ -37,21 +56,31 @@
         .tabcontent_program {
             color: white;
             display: none;
- /*           padding: 100px 20px;*/
-         /*   height: 100%;*/
+            /*           padding: 100px 20px;*/
+            /*   height: 100%;*/
         }
 
-        #Home1 {background-color: red;}
-        #News {background-color: green;}
-        #Contact {background-color: blue;}
-        #About {background-color: orange;}
+        #Home1 {
+            background-color: red;
+        }
 
+        #News {
+            background-color: green;
+        }
 
-         table {
-             font-family: arial, sans-serif;
-             border-collapse: collapse;
-             width: 100%;
-         }
+        #Contact {
+            background-color: blue;
+        }
+
+        #About {
+            background-color: orange;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
 
         td, th {
             border: 1px solid #dddddd;
@@ -59,7 +88,8 @@
             padding: 8px;
 
         }
-        th{
+
+        th {
             background-color: #0f067a;
         }
 
@@ -75,224 +105,338 @@
 </div>
 <div class="wrapper row3">
 
-    <div class="sixteen columns mt10 mb20"><h1 class="gdl-page-title gdl-title title-color">MASTER OF CYBERSECURITY:
-        DISTANCE MASTER PROGRAM IN CYBER SECURITY
-    </h1>
+    <div class="sixteen columns mt10 mb20">
+        <h1 class="gdl-page-title gdl-title title-color">MASTER OF CYBERSECURITY:
+            DISTANCE MASTER PROGRAM IN CYBER SECURITY  </h1>
+            <hr>
+            <h3> ACADEMIC PROGRAMME</h3>
+            <hr>
+
         <div class="gdl-page-caption gdl-divider"></div>
     </div>
 
-    <div class="gdl-page-content"><div class="shortcode1">
-        <div class="frontpage-block">
-            <h3>GUIDELINES FOR VOLUME OF LEARNING</h3>
-            <p>This Programme has a list of online courses and each such course has a course code, a course title, and a credit value as given in the regulation.
-                The volume of learning correspond to such credit values shall be interpreted based on Table</p>
-            <table>
-                <tr>
-                    <th>Course/Subject Description</th>
-                    <th>Credit Value</th>
-                    <th>Staff-Student Contact Hours</th>
-                    <th>Notional Hours (direct staff-student contact hours and independent learning)</th>
-                </tr>
-                <tr>
-                    <td>Lecture course</td>
-                    <td>1</td>
-                    <td>15</td>
-                    <td>50</td>
-                </tr>
-                <tr>
-                    <td>Laboratory course</td>
-                    <td>1</td>
-                    <td>30</td>
-                    <td>50</td>
-                </tr>
-                <tr>
-                    <td>Individual Project/ Independent Studies</td>
-                    <td>5</td>
-                    <td>Variable</td>
-                    <td>500</td>
-                </tr>
-            </table>
-            <ul>
-                <li>The above guidelines are based on the recommendations given in the Sri Lanka Qualifications Framework (SLQF).</li>
-           <li>The minimum number of credits per course/subject is one.</li>
-           <li>One credit is considered equivalent to 50 notional learning hours for an online course and laboratory course. </li>
-           <li>In the case of project work/ Independent Studies, one credit is considered equivalent to a minimum of 100 notional hours.</li>
-           <li>The Senate shall have the power to make changes to the list of courses, course codes, course titles, and credit values.</li>
-           <li>The syllabus applicable to any course shall be prescribed by the School from time-to-time and as approved by the Academic Syndicate.</li>
-           <li>Each student shall submit Assignments as part of Continuous Assessment set by the School.</li>
-            </ul>
-    </div>
+    <div class="gdl-page-content">
         <div class="shortcode1">
             <div class="frontpage-block">
-                <h6>SEMESTERS AND COURSES</h6>
-                <button class="tablink_program" onclick="openPage('semester1', this, 'blue')" id="defaultOpen">SEMESTER 1</button>
-                <button class="tablink_program" onclick="openPage('semester2', this, 'blue')">SEMESTER 2</button>
-                <button class="tablink_program" onclick="openPage('semester3', this, 'blue')">SEMESTER 3</button>
-                <button class="tablink_program" onclick="openPage('semester4', this, 'blue')">SEMESTER 4</button>
-
-                <div id="semester1" class="tabcontent_program">
-                    <p>The following 5 core courses shall be offered</p>
-                    <table>
-                        <tr>
-                            <th>Course</th>
-                            <th>Credits</th>
-                        </tr>
-                        <tr>
-                            <td>MC1001: Principles of Cybersecurity</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>MC1002: Cryptographic Systems</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>MC1003: Network protocols standards</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td>MC1004: Network design and performance</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>MC1005: Special Topics in Cybersecurity</td>
-                            <td>2</td>
-                        </tr>
-                    </table>
-                </div>
-
-                <div id="semester2" class="tabcontent_program">
-                    <p>The following 4 core courses shall  be offered</p>
-                    <table>
-                        <tr>
-                            <th>Course</th>
-                            <th>Credits</th>
-                        </tr>
-                        <tr>
-                            <td>MC2001: Database Security</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>MC2002: Malware and Software Vulnerability Analysis</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>MC2003: Network Security</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>MC2004: Security in Mobile and Wireless Networks</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>MC1005: Continuation of the Special Topics in Cybersecurity of the First Semester</td>
-                            <td>*Continuation of the course in the First Semester</td>
-                        </tr>
-                    </table>
-                </div>
-
-                <div id="semester3" class="tabcontent_program">
-                    <p>The following 4 compulsory courses shall be offered</p>
-                    <table>
-                        <tr>
-                            <th>Course</th>
-                            <th>Credits</th>
-                        </tr>
-                        <tr>
-                            <td>MC3201: Digital Forensic</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>MC3002: Cybercrime and Legislation</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td>MC3003: Data Mining and Open Source intelligence</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>MC3004: Incident Management</td>
-                            <td>2</td>
-                        </tr>
-                    </table>
-                </div>
-
-                <div id="semester4" class="tabcontent_program">
-                    <p>The following 3 compulsory course shall be offered</p>
-                    <table>
-                        <tr>
-                            <th>Course</th>
-                            <th>Credits</th>
-                        </tr>
-                        <tr>
-                            <td>MC4001:  Security Auditing and Risk Management</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td>MC4002: Network Troubleshooting and Hardening</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>MC4003: Independent Studies in Cybersecurity</td>
-                            <td>5</td>
-                        </tr>
-                        <tr>
-                            <td>MC3004: Incident Management</td>
-                            <td>2</td>
-                        </tr>
-                    </table>
-                </div>
-
+                <h3>GUIDELINES FOR VOLUME OF LEARNING</h3>
+                <p>This Programme has a list of online courses and each such course has a course code, a course title,
+                    and a credit value as given in the regulation.
+                    The volume of learning correspond to such credit values shall be interpreted based on Table</p>
+                <table>
+                    <tr>
+                        <th>Course/Subject Description</th>
+                        <th>Credit Value</th>
+                        <th>Staff-Student Contact Hours</th>
+                        <th>Notional Hours (direct staff-student contact hours and independent learning)</th>
+                    </tr>
+                    <tr>
+                        <td>Lecture course</td>
+                        <td>1</td>
+                        <td>15</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Laboratory course</td>
+                        <td>1</td>
+                        <td>30</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Individual Project/ Independent Studies</td>
+                        <td>5</td>
+                        <td>Variable</td>
+                        <td>500</td>
+                    </tr>
+                </table>
+                <ul>
+                    <li>The above guidelines are based on the recommendations given in the Sri Lanka Qualifications
+                        Framework (SLQF).
+                    </li>
+                    <li>The minimum number of credits per course/subject is one.</li>
+                    <li>One credit is considered equivalent to 50 notional learning hours for an online course and
+                        laboratory course.
+                    </li>
+                    <li>In the case of project work/ Independent Studies, one credit is considered equivalent to a
+                        minimum of 100 notional hours.
+                    </li>
+                    <li>The Senate shall have the power to make changes to the list of courses, course codes, course
+                        titles, and credit values.
+                    </li>
+                    <li>The syllabus applicable to any course shall be prescribed by the School from time-to-time and as
+                        approved by the Academic Syndicate.
+                    </li>
+                    <li>Each student shall submit Assignments as part of Continuous Assessment set by the School.</li>
+                </ul>
             </div>
+            <div class="shortcode1">
+                <div class="frontpage-block">
+                    <h6>SEMESTERS AND COURSES</h6>
+                    <button class="tablink_program" onclick="openPage('semester1', this, 'blue')" id="defaultOpen">
+                        SEMESTER 1
+                    </button>
+                    <button class="tablink_program" onclick="openPage('semester2', this, 'blue')">SEMESTER 2</button>
+                    <button class="tablink_program" onclick="openPage('semester3', this, 'blue')">SEMESTER 3</button>
+                    <button class="tablink_program" onclick="openPage('semester4', this, 'blue')">SEMESTER 4</button>
+
+                    <div id="semester1" class="tabcontent_program">
+                        <p>The following 5 core courses shall be offered</p>
+                        <table>
+                            <tr>
+                                <th>Course</th>
+                                <th>Credits</th>
+                            </tr>
+                            <tr>
+                                <td>MC1001: Principles of Cybersecurity</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>MC1002: Cryptographic Systems</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>MC1003: Network protocols standards</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>MC1004: Network design and performance</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>MC1005: Special Topics in Cybersecurity</td>
+                                <td>2</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div id="semester2" class="tabcontent_program">
+                        <p>The following 4 core courses shall be offered</p>
+                        <table>
+                            <tr>
+                                <th>Course</th>
+                                <th>Credits</th>
+                            </tr>
+                            <tr>
+                                <td>MC2001: Database Security</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>MC2002: Malware and Software Vulnerability Analysis</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>MC2003: Network Security</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>MC2004: Security in Mobile and Wireless Networks</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>MC1005: Continuation of the Special Topics in Cybersecurity of the First Semester
+                                </td>
+                                <td>*Continuation of the course in the First Semester</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div id="semester3" class="tabcontent_program">
+                        <p>The following 4 compulsory courses shall be offered</p>
+                        <table>
+                            <tr>
+                                <th>Course</th>
+                                <th>Credits</th>
+                            </tr>
+                            <tr>
+                                <td>MC3201: Digital Forensic</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>MC3002: Cybercrime and Legislation</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>MC3003: Data Mining and Open Source intelligence</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>MC3004: Incident Management</td>
+                                <td>2</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div id="semester4" class="tabcontent_program">
+                        <p>The following 3 compulsory course shall be offered</p>
+                        <table>
+                            <tr>
+                                <th>Course</th>
+                                <th>Credits</th>
+                            </tr>
+                            <tr>
+                                <td>MC4001: Security Auditing and Risk Management</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>MC4002: Network Troubleshooting and Hardening</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>MC4003: Independent Studies in Cybersecurity</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>MC3004: Incident Management</td>
+                                <td>2</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+            <div>
+                <hr>
+                <h3> ASSESSMENT & EXAMINATIONS</h3>
+                <hr>
+            </div>
+
+            <div class="shortcode1">
+                <div class="frontpage-block">
+                    <ul>
+                        <li>The procedure for continuous online assessment, forms of evaluation in respect of each
+                            course and
+                            the mode of their evaluation shall be decided by the relevant Board of Study and approved by
+                            the Academic
+                            Syndicate. The Academic Syndicate shall also have power, on the recommendation of the
+                            relevant Board of Study,
+                            to determine the structure and rubric of question papers on each course when and where
+                            relevant.
+                        </li>
+                        <li>A mark out of 100 will be given to each course including Individual Project / Independent
+                            Study.
+                        </li>
+                        <li>Each student may be required to submit assignments within a prescribed period as part of
+                            continuous assessments of such courses.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="shortcode1">
+                <div class="frontpage-block">
+                    <h6>Independent Study</h6>
+                    <ul>
+                        <li>The Independent Studies in Cybersecurity in the fourth Semesters of the Programme shall
+                            consist of minimum of ten (10) studies and maximum of fifteen (15) studies which solve the
+                            given set of problems and submission of a report based on the solutions to the problems.
+                        </li>
+                        <li>Each student who undertake Independent Studies in Cybersecurity should submit a Report based
+                            on the solutions to the problems together with Log forms at the end of the fourth Semester.
+                            An oral examination on this report will be held.
+                        </li>
+                        <li>By the end of the Fourth Semester, each student will be required to complete his/her report
+                            on Independent Studies in Cybersecurity and submit it to the School within the specified
+                            period. However it shall not be submitted unless the course Coordinator has certified that
+                            student has solved the all given problems. The student shall also ensure that the report
+                            fits in to the prescribed format.
+                        </li>
+                        <li>A student shall be deemed to have passed the Oral Examination for the Independent Studies in
+                            Cybersecurity if he satisfies the following requirements.
+                        </li>
+<div style="padding-left: 10%">
+                        <li>The Board of Examiners should satisfies that the report of Independent Studies in
+                            Cybersecurity
+                            demonstrates the candidate’s knowledge of the methods of problem solving, his competence to
+                            present
+                            material systematically and his ability to analyse and interpret results/data, as are
+                            generally applicable
+                            to a Master of Science Degree of the University and in particular, to such a Degree in
+                            Cybersecurity.
+                        </li>
+                        <li>Student should satisfy the requirements of the relevant By-Laws if applicable.</li>
+</div>
+                    </ul>
+
+
+                    </ul>
+                </div>
+            </div>
+
+
+            <div>
+                <hr>
+                <h3>  ELIGIBILITY CRITERIA</h3>
+                <hr>
+            </div>
+
+            <div class="shortcode1">
+                <div class="frontpage-block">
+                    <ul>
+                        <li>
+                            A Student who has obtained minimum of 2.00 GPA for the first and second semester courses is qualified to follow the third
+                            and fourth semester courses. The best minimum set of courses that exceeds or adds up to 12 credits in the first and second
+                            semester are considered for the calculation of GPA to qualify the third and fourth semester courses.
+                        </li>
+                        <li>The best minimum set of courses that exceeds or adds up to 20 credits are considered for the calculation of GPA to qualify to obtain the Postgraduate Certificate in Master of Cybersecurity.</li>
+                        <li>The best minimum set of courses that exceeds or adds up to 25 credits are considered for the calculation of GPA to qualify to obtain the Postgraduate Diploma in Master of Cybersecurity.</li>
+                        <li>The best minimum set of courses that exceeds or adds up to 45 credits in the all four semesters are considered for the calculation of GPA to obtain the Degree of Master of Cybersecurity.</li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <hr>
+                <h3>   AWARD OF THE DEGREE/ POSTGRADUATE DIPLOMA/POSTGRADUATE CERTIFICATE</h3>
+                <hr>
+            </div>
+            <div class="shortcode1">
+                <div class="frontpage-block">
+                    <ul><li>A Student who has satisfied the following conditions shall be deemed to have qualified to obtain the Degree of Master of Cybersecurity.</li>
+                 <div style="padding-left: 10%">
+                   <ol>
+                       <li>Has obtained a minimum of 45 credits.</li>
+                       <li>Has obtained a minimum of 2.00 of GPA. (The best minimum set of courses that exceeds or adds up to 45 credits are 	considered for the calculation of GPA.)</li>
+<li>Has obtained a pass (C) for the Independent Studies in Cybersecurity.</li>
+                   </ol>
+                 </div>
+                    <li>A student qualifying for the award of a degree by completing all the 	above relevant requirements shall also be qualified for the award of a 	DISTINCTION pass if he/she has obtained a minimum of 3.5 GPA. </li>
+                   <hr>
+                        <li>A student who satisfies the following conditions shall be deemed to 	have qualify to obtain the Postgraduate Diploma in Cybersecurity.</li>
+                    <div style="padding-left: 10%">
+                        <ol>
+                        <li>Has obtained a minimum of 25 credits.</li>
+                        <li>Has obtained a minimum of 2.00 of GPA. (The best minimum set of courses that exceeds or add up to 25 credits are considered for the calculation GPA)</li>
+                        </ol>
+                    </div>
+                        <li>A student can opt to obtain the Postgraduate Diploma in Cybersecurity after obtaining minimum of 25 credits. </li>
+                        <li>A student who satisfies the requirement in (19) will not be eligible to obtain the Postgraduate Diploma in Cybersecurity.</li>
+
+                    </ul>
+                    <hr>
+                    <!--need to add fro 21  page 6 -->
+                </div>
+            </div>
+
+
+
+
+            <p style="text-align: justify;"><strong>University of Colombo School of Computing (UCSC) is government own
+                leading academic institute in the south Asian region in the area of computer science. In striving for
+                excellence in education and research, the UCSC has always attempted to foresee the needs of the region
+                and the developing world as a whole. </strong></p>
+            <p style="text-align: justify;"><strong>Competency of the academic staff is one of the crucial factors in
+                determining the quality of the educational and research process. The UCSC presently has over 20 senior
+                lecturers with&nbsp; doctoral qualifications and a further 15 with masters qualifications. </strong></p>
         </div>
-        <p style="text-align: justify;"><strong>University of Colombo School of Computing (UCSC) is government own leading academic institute in the south Asian region in the area of computer science. In striving for excellence in education and research, the UCSC has always attempted to foresee the needs of the region and the developing world as a whole. </strong></p>
-        <p style="text-align: justify;"><strong>Competency of the academic staff is one of the crucial factors in determining the quality of the educational and research process. The UCSC presently has over 20 senior lecturers with&nbsp; doctoral qualifications and a further 15 with masters qualifications. </strong></p>
+
     </div>
 
-</div>
-<!--
-<button class="tablink_program" onclick="openPage('Home1', this, 'red')">Home1</button>
-<button class="tablink_program" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
-<button class="tablink_program" onclick="openPage('Contact', this, 'blue')">Contact</button>
-<button class="tablink_program" onclick="openPage('About', this, 'orange')">About</button>
 
-<div id="Home1" class="tabcontent_program">
-    <h3>Home1</h3>
-    <p>Home1 is where the heart is..</p>
 </div>
 
-<div id="News" class="tabcontent_program">
-    <h3>News</h3>
-    <p>Some news this fine day!</p>
-</div>
-
-<div id="Contact" class="tabcontent_program">
-    <h3>Contact</h3>
-    <p>Get in touch, or swing by for a cup of coffee.</p>
-</div>
-
-<div id="About" class="tabcontent_program">
-    <h3>About</h3>
-    <p>Who we are and what we do.</p>
-</div>-->
-
-<script>
-    function openPage(pageName,elmnt,color) {
-        var i, tabcontent_program, tablink_programs;
-        tabcontent_program = document.getElementsByClassName("tabcontent_program");
-        for (i = 0; i < tabcontent_program.length; i++) {
-            tabcontent_program[i].style.display = "none";
-        }
-        tablink_programs = document.getElementsByClassName("tablink_program");
-        for (i = 0; i < tablink_programs.length; i++) {
-            tablink_programs[i].style.backgroundColor = "";
-        }
-        document.getElementById(pageName).style.display = "block";
-        elmnt.style.backgroundColor = color;
-
-    }
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
-</script>
 
 </body>
 </html>
