@@ -1,79 +1,93 @@
 <!-- Tab links -->
 
+<head>
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/layout.css" rel="stylesheet" type="text/css" media="all">
 
-<link href="../../css/style.css" rel="stylesheet">
-<script type="text/javascript" src="../../js/all.js"></script>
-<script type="text/javascript" src="../../js/jquery.js"></script>
+    <div id="headerbar"></div>
+    <script type="text/javascript" src="../../js/jquery.js"></script>
+    <script>
+        window.onload = function () {
+            $.get("../nav/header.html", function (data) {
+                $("#headerbar").html(data);
+            })
+        }
+    </script>
+
+    <div class="wrapper row0">
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
+            <button class="tablinks" onclick="openCity(event, 'Program')">Program</button>
+            <!--  <a class="tablinks" onclick="openCity(event, 'Home')" href="../html/index.html">Home</a>
+              <a class="tablinks" onclick="openCity(event, 'Program')" href="../html/program.html">Program</a>-->
+            <button class="tablinks" onclick="openCity(event, 'Admissions')">Admissions</button>
+            <button class="tablinks" onclick="openCity(event, 'Staff')">Staff</button>
+            <button class="tablinks" onclick="openCity(event, 'Student')">Student</button>
+            <button class="tablinks" onclick="openCity(event, 'Living_in_Sri_Lanka')">Living in Sri Lanka</button>
+            <button class="tablinks" onclick="openCity(event, 'News')">News</button>
+            <button class="tablinks" onclick="openCity(event, 'Contact')">Contact</button>
+        </div>
+    </div>
+
+    <!-- Tab content -->
+    <div id="Home" class="tabcontent">
+        <h3>Home</h3>
+        <p>Home</p>
+        <head>
+            <script type="text/javascript" src="../../js/jquery.js"></script>
+            <script>
+                $(function () {
+                    $("#includedIndex").load("../../html/index.html");
+                });
+            </script>
+        </head>
+        <div id="includedIndex"></div>
+    </div>
+
+    <div id="Program" class="tabcontent">
+        <h3>Program</h3>
+        <p>Program</p>
+        <head>
+            <script type="text/javascript" src="../../js/jquery.js"></script>
+            <script>
+                $(function () {
+                    $("#includedprogram").load("../program.html");
+                });
+            </script>
+        </head>
+        <div id="includedprogram"></div>
+    </div>
+
+    <div id="Admissions" class="tabcontent">
+        <h3>Admissions</h3>
+        <p>Admissions</p>
+    </div>
+
+    <div id="Staff" class="tabcontent">
+        <h3>Staff</h3>
+        <p>Staff</p>
+    </div>
+
+    <div id="Student" class="tabcontent">
+        <h3>Student</h3>
+        <p>Student</p>
+    </div>
+
+    <div id="Living_in_Sri_Lanka" class="tabcontent">
+        <h3>Living_in_Sri_Lanka</h3>
+        <p>Living_in_Sri_Lanka</p>
+    </div>
+
+    <div id="News" class="tabcontent">
+        <h3>News</h3>
+        <p>News</p>
+    </div>
+
+    <div id="Contact" class="tabcontent">
+        <h3>Contact</h3>
+        <p>Contact</p>
+    </div>
 
 
-<div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
-    <button class="tablinks" onclick="openCity(event, 'Program')">Program</button>
-    <!--  <a class="tablinks" onclick="openCity(event, 'Home')" href="../html/index.html">Home</a>
-      <a class="tablinks" onclick="openCity(event, 'Program')" href="../html/program.html">Program</a>-->
-    <button class="tablinks" onclick="openCity(event, 'Admissions')">Admissions</button>
-    <button class="tablinks" onclick="openCity(event, 'Staff')">Staff</button>
-    <button class="tablinks" onclick="openCity(event, 'Student')">Student</button>
-    <button class="tablinks" onclick="openCity(event, 'Living_in_Sri_Lanka')">Living in Sri Lanka</button>
-    <button class="tablinks" onclick="openCity(event, 'News')">News</button>
-    <button class="tablinks" onclick="openCity(event, 'Contact')">Contact</button>
-</div>
-
-<!-- Tab content -->
-<div id="Home" class="tabcontent">
-    <h3>Home</h3>
-    <p>Home</p>
-    <head>
-        <script type="text/javascript" src="../../js/jquery.js"></script>
-        <script>
-            $(function () {
-                $("#includedIndex").load("../../html/index.html");
-            });
-        </script>
-    </head>
-    <div id="includedIndex"></div>
-</div>
-
-<div id="Program" class="tabcontent">
-    <h3>Program</h3>
-    <p>Program</p>
-    <head>
-        <script type="text/javascript" src="../../js/jquery.js"></script>
-        <script>
-            $(function () {
-                $("#includedprogram").load("../program.html");
-            });
-        </script>
-    </head>
-    <div id="includedprogram"></div>
-</div>
-
-<div id="Admissions" class="tabcontent">
-    <h3>Admissions</h3>
-    <p>Admissions</p>
-</div>
-
-<div id="Staff" class="tabcontent">
-    <h3>Staff</h3>
-    <p>Staff</p>
-</div>
-
-<div id="Student" class="tabcontent">
-    <h3>Student</h3>
-    <p>Student</p>
-</div>
-
-<div id="Living_in_Sri_Lanka" class="tabcontent">
-    <h3>Living_in_Sri_Lanka</h3>
-    <p>Living_in_Sri_Lanka</p>
-</div>
-
-<div id="News" class="tabcontent">
-    <h3>News</h3>
-    <p>News</p>
-</div>
-
-<div id="Contact" class="tabcontent">
-    <h3>Contact</h3>
-    <p>Contact</p>
-</div>
+    <script type="text/javascript" src="../../js/all.js"></script>
+    <script type="text/javascript" src="../../js/jquery.js"></script>
