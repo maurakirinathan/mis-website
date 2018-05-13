@@ -1,0 +1,121 @@
+/*Basic CSS*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+p {
+    margin: 0 0 20px 0;
+}
+
+h1, h2, h3, h4, h5, h6, .gdl-title {
+    font-family: Merriweather;
+}
+
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #619ab5;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: #619ab5;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    /*border: 1px solid #ccc;*/
+    border-top: none;
+}
+
+/*logo on top*/
+div.logo-wrapper {
+    float: left;
+}
+
+div.logo-wrapper img {
+    display: block;
+}
+
+.shortcode1-2 {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
+
+div.frontpage-block {
+    background: none repeat scroll 0 0 #64A0BB;
+    color: #FFFFFF;
+    margin: 0px 0px 20px 0px;
+    padding: 10px;
+<<<<<<< HEAD
+
+}
+
+.nine.columns {
+    width: 75%;
+}
+
+.three.columns {
+    width: 25%;
+}
+
+.float-left {
+    float: left;
+}
+
+.pi {
+    width: 25%;
+    float: left;
+}
+
+.padding-l-20 {
+    padding-left: 20px;
+}
+
+div.personnal-widget-wrapper {
+    margin-top: 15px;
+    display: inline-block;
+}
+
+div.personnal-widget-avartar {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+div.personnal-widget-title {
+    font-size: 14px;
+    padding-top: 4px;
+    margin-bottom: 8px;
+}
+=======
+    /*height: 380px;*/
+}
+>>>>>>> fd13e68040066befdc5025d1f220a667a3ae7717
