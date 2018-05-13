@@ -1,7 +1,154 @@
+<!DOCTYPE html>
 <html>
 
 <body>
 
-<h1>welcome program page</h1>
+
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {box-sizing: border-box}
+
+        /* Set height of body and the document to 100% */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial;
+        }
+
+        /* Style tab links */
+        .tablink_program {
+            background-color: #555;
+            color: white;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            font-size: 17px;
+            width: 25%;
+        }
+
+        .tablink_program:hover {
+            background-color: #777;
+        }
+
+        /* Style the tab content (and add height:100% for full page content) */
+        .tabcontent_program {
+            color: white;
+            display: none;
+            padding: 100px 20px;
+            height: 100%;
+        }
+
+        #Home1 {background-color: red;}
+        #News {background-color: green;}
+        #Contact {background-color: blue;}
+        #About {background-color: orange;}
+
+
+         table {
+             font-family: arial, sans-serif;
+             border-collapse: collapse;
+             width: 100%;
+         }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+    </style>
+</head>
+<body>
+
+<div>
+    <h2>ACADEMIC PROGRAMME</h2>
+    <h3>Guidelines for Volume of Learning</h3>
+
+<p>This Programme has a list of online courses and each such course has a course code, a course title, and a credit value as given in the regulation. The volume of learning correspond to such credit values shall be interpreted based on Table</p>
+
+
+    <table>
+        <tr>
+            <th>Course/Subject Description</th>
+            <th>Credit Value</th>
+            <th>Staff-Student Contact Hours</th>
+            <th>Notional Hours (direct staff-student contact hours and independent learning)</th>
+        </tr>
+        <tr>
+            <td>Lecture course</td>
+            <td>1</td>
+            <td>15</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Laboratory course</td>
+            <td>1</td>
+            <td>30</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Individual Project/ Independent Studies</td>
+            <td>5</td>
+            <td>Variable</td>
+            <td>500</td>
+        </tr>
+    </table>
+
+
+    <p></p>
+</div>
+
+<button class="tablink_program" onclick="openPage('Home1', this, 'red')">Home1</button>
+<button class="tablink_program" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
+<button class="tablink_program" onclick="openPage('Contact', this, 'blue')">Contact</button>
+<button class="tablink_program" onclick="openPage('About', this, 'orange')">About</button>
+
+<div id="Home1" class="tabcontent_program">
+    <h3>Home1</h3>
+    <p>Home1 is where the heart is..</p>
+</div>
+
+<div id="News" class="tabcontent_program">
+    <h3>News</h3>
+    <p>Some news this fine day!</p>
+</div>
+
+<div id="Contact" class="tabcontent_program">
+    <h3>Contact</h3>
+    <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
+
+<div id="About" class="tabcontent_program">
+    <h3>About</h3>
+    <p>Who we are and what we do.</p>
+</div>
+
+<script>
+    function openPage(pageName,elmnt,color) {
+        var i, tabcontent_program, tablink_programs;
+        tabcontent_program = document.getElementsByClassName("tabcontent_program");
+        for (i = 0; i < tabcontent_program.length; i++) {
+            tabcontent_program[i].style.display = "none";
+        }
+        tablink_programs = document.getElementsByClassName("tablink_program");
+        for (i = 0; i < tablink_programs.length; i++) {
+            tablink_programs[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+
 </body>
 </html>
