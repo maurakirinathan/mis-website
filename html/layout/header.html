@@ -2,6 +2,7 @@
 
 <head>
     <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/skeleton.css" rel="stylesheet">
     <link href="../../css/layout.css" rel="stylesheet" type="text/css" media="all">
 
     <!--TODO use javascript at the end of the file-->
@@ -91,8 +92,18 @@
     </div>
 
     <div id="Contact" class="tabcontent">
-        <h3>Contact</h3>
-        <p>Contact</p>
+        <!--<h3>Contact</h3>
+        <p>Contact</p>-->
+
+        <head>
+            <script type="text/javascript" src="../../js/jquery.js"></script>
+            <script>
+                $(function () {
+                    $("#includedContacts").load("../contacts.html");
+                });
+            </script>
+        </head>
+        <div id="includedContacts"></div>
     </div>
 
     <div id="footerbar"></div>

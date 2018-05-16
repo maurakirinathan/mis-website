@@ -247,7 +247,7 @@ td{border-width:0 1px;}
 
 /* Rounded Corners
 --------------------------------------------------------------------------------------------------------------- */
-.rounded, input, button, textarea, #header input, #footer input, #slide-wrapper figcaption, .avatar, #comments li, .faico a, #twitter,
+.rounded, input, button, #header input, #footer input, #slide-wrapper figcaption, .avatar, #comments li, .faico a, #twitter,
 .pagination a, .pagination strong{border-radius:8px;}
 
 #header button, #footer button{border-radius:0 8px 8px 0;}
@@ -428,3 +428,12 @@ table a, #comments a{background-color:inherit;}
 	.scrollable{display:block; width:100%; margin:0 0 30px 0; padding:0 0 15px 0; overflow:auto; overflow-x:scroll;}
 	.scrollable table{margin:0; padding:0; white-space:nowrap;}
 }
+
+/*dol*/
+div.content-wrapper {
+	width: 960px;
+	padding: 20px 10px 0px 10px;
+	margin-left: s0px;
+}
+
+/*dol*/

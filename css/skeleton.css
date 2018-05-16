@@ -1,0 +1,32 @@
+
+
+.container .sixteen.columns {
+    width: 940px;
+}
+
+.column, .columns {
+    margin: 0px 10px 35px 10px;
+    position: relative;
+}
+
+.container .five.columns {
+    width: 280px;
+}
+.sidebar-included .gdl-page-item {
+    width: 660px;
+}
+.container .sidebar-included .gdl-page-item .sixteen.columns {
+    width: 640px;
+}
+
+.container .sixteen.columns {
+    width: 940px;
+}
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}

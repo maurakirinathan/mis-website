@@ -92,6 +92,7 @@ div.frontpage-block {
 .pi {
     width: 25%;
     float: left;
+    box-sizing: border-box;
 }
 
 .padding-l-20 {
@@ -114,3 +115,158 @@ div.personnal-widget-title {
     padding-top: 4px;
     margin-bottom: 8px;
 }
+
+/*dol*/
+div.content-wrapper {
+    position: relative;
+    margin-top: 12px;
+}
+
+.mb20 {
+    margin-bottom: 20px !important;
+}
+.mt10 {
+    margin-top: 10px !important;
+}
+
+div.gdl-page-float-left {
+    float: left;
+}
+
+div.gdl-right-sidebar {
+    float: left;
+}
+.mt0 {
+    margin-top: 0px !important;
+}
+h1.gdl-page-title {
+    font-size: 18px;
+    height: 18px;
+    border-bottom: 1px solid #65a2be;
+    margin-bottom: 0px;
+    padding: 0px 22px 13px 0px;
+    float: left;
+}
+div.gdl-page-caption {
+    padding: 3px 22px 10px 0px;
+    overflow: hidden;
+    border-bottom: 1px solid;
+    height: 18px;
+}
+div.gdl-page-item {
+    float: right;
+}
+form {
+    margin-bottom: 20px;
+}
+div.contact-form-wrapper ol {
+    margin: 0px;
+    list-style: none;
+}
+div.contact-form-wrapper ol li {
+    margin-bottom: 20px;
+}
+li {
+    line-height: 18px;
+}
+div.contact-form-wrapper ol li div.error {
+    display: none;
+}
+
+div.contact-form-wrapper input[type="text"] {
+    width: 320px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0px 0px 0px 7px;
+    margin: 10px 5px 10px;
+    line-height: 20px;
+    max-width: 90%;
+}
+
+strong {
+    font-weight: bold;
+}
+
+input[type="text"], textarea {
+    outline: none;
+    border-radius: 2px;
+    font: 11px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: block;
+    background: #fff;
+}
+div.contact-form-wrapper textarea {
+    height: 165px;
+    width: 590px;
+    margin: 10px 5px 10px;
+    padding: 10px;
+    max-width: 100%;
+    line-height: 20px;
+}
+textarea {
+    min-height: 60px;
+}
+div.contact-form-wrapper ol li.sending-result {
+    max-width: 622px;
+    display: none;
+}
+
+div.contact-form-wrapper ol li {
+    margin-bottom: 20px;
+}
+li {
+    line-height: 18px;
+}
+div.contact-form-wrapper ol li.sending-result .message-box-wrapper {
+    padding: 10px 15px 10px 15px;
+}
+
+div.message-box-wrapper.green {
+    background-color: #e1ffd9;
+    border-color: #badeb1;
+    color: #435b3d;
+}
+div.message-box-wrapper {
+    border: 1px solid;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+div.contact-form-wrapper .contact-submit {
+    float: left;
+}
+div.contact-form-wrapper .contact-loading {
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin: 7px 0px 0px 15px;
+    display: none;
+    background: url(,,/images/loading.gif);
+}
+div.custom-sidebar {
+    border-color: inherit;
+    margin-bottom: 30px;
+    clear: both;
+}
+div.right-sidebar-wrapper .custom-sidebar-title {
+    padding: 8px 14px;
+    font-size: 13px;
+    border-color: inherit;
+    margin-bottom: 5px;
+}
+div.custom-sidebar .textwidget {
+    margin-top: 15px;
+}
+p {
+    margin: 0 0 20px 0;
+}
+iframe {
+    display: block;
+}
+small {
+    font-size: 80%;
+}
+p a {
+    line-height: inherit;
+}
+
+
+/*dol*/
