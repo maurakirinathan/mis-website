@@ -21,6 +21,43 @@
 
         // Get the element with id="defaultOpen" and click on it
         document.getElementById("defaultOpen").click();
+
+        function toggleDivSemesters() {
+            var x = document.getElementById("div_semesters");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function toggleDivAssessment() {
+            var x = document.getElementById("div_assessment");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function toggleDivEligibility() {
+            var x = document.getElementById("div_eligibility");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        function toggleDivAward() {
+            var x = document.getElementById("div_award");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
     </script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
@@ -57,18 +94,6 @@
             /*   height: 100%;*/
         }
 
-        #Home1 {
-            background-color: red;
-        }
-
-        #News {
-            background-color: green;
-        }
-
-        #About {
-            background-color: orange;
-        }
-
         table {
             font-family: arial, sans-serif;
             border-collapse: collapse;
@@ -90,6 +115,11 @@
             background-color: #dddddd;
         }
 
+        #div_assessment {
+            display: none;
+        }
+
+
     </style>
 </head>
 <body>
@@ -100,10 +130,10 @@
 
     <div class="sixteen columns mt10 mb20">
         <h1 class="gdl-page-title gdl-title title-color">MASTER OF CYBERSECURITY:
-            DISTANCE MASTER PROGRAM IN CYBER SECURITY  </h1>
-            <hr>
-            <h3> ACADEMIC PROGRAMME</h3>
-            <hr>
+            DISTANCE MASTER PROGRAM IN CYBER SECURITY </h1>
+        <hr>
+        <h3> ACADEMIC PROGRAMME</h3>
+        <hr>
 
         <div class="gdl-page-caption gdl-divider"></div>
     </div>
@@ -161,9 +191,17 @@
                     <li>Each student shall submit Assignments as part of Continuous Assessment set by the School.</li>
                 </ul>
             </div>
+            <div>
+                <hr>
+                <h3> SEMESTERS AND COURSES</h3>
+                <hr>
+                <button onclick="toggleDivSemesters()">Try it</button>
+            </div>
+            <div id="div_semesters">
+
             <div class="shortcode1">
                 <div class="frontpage-block">
-                    <h6>SEMESTERS AND COURSES</h6>
+
                     <button class="tablink_program" onclick="openPage('semester1', this, 'blue')" id="defaultOpen">
                         SEMESTER 1
                     </button>
@@ -286,160 +324,222 @@
 
                 </div>
             </div>
+            </div>
 
             <div>
                 <hr>
                 <h3> ASSESSMENT & EXAMINATIONS</h3>
                 <hr>
+                <button onclick="toggleDivAssessment()">Try it</button>
             </div>
+            <div id="div_assessment">
 
-            <div class="shortcode1">
-                <div class="frontpage-block">
-                    <ul>
-                        <li>The procedure for continuous online assessment, forms of evaluation in respect of each
-                            course and
-                            the mode of their evaluation shall be decided by the relevant Board of Study and approved by
-                            the Academic
-                            Syndicate. The Academic Syndicate shall also have power, on the recommendation of the
-                            relevant Board of Study,
-                            to determine the structure and rubric of question papers on each course when and where
-                            relevant.
-                        </li>
-                        <li>A mark out of 100 will be given to each course including Individual Project / Independent
-                            Study.
-                        </li>
-                        <li>Each student may be required to submit assignments within a prescribed period as part of
-                            continuous assessments of such courses.
-                        </li>
-                    </ul>
+                <div class="shortcode1">
+                    <div class="frontpage-block">
+                        <ul>
+                            <li>The procedure for continuous online assessment, forms of evaluation in respect of each
+                                course and
+                                the mode of their evaluation shall be decided by the relevant Board of Study and
+                                approved by
+                                the Academic
+                                Syndicate. The Academic Syndicate shall also have power, on the recommendation of the
+                                relevant Board of Study,
+                                to determine the structure and rubric of question papers on each course when and where
+                                relevant.
+                            </li>
+                            <li>A mark out of 100 will be given to each course including Individual Project /
+                                Independent
+                                Study.
+                            </li>
+                            <li>Each student may be required to submit assignments within a prescribed period as part of
+                                continuous assessments of such courses.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="shortcode1">
+                    <div class="frontpage-block">
+                        <h6>Independent Study</h6>
+                        <ul>
+                            <li>The Independent Studies in Cybersecurity in the fourth Semesters of the Programme shall
+                                consist of minimum of ten (10) studies and maximum of fifteen (15) studies which solve
+                                the
+                                given set of problems and submission of a report based on the solutions to the problems.
+                            </li>
+                            <li>Each student who undertake Independent Studies in Cybersecurity should submit a Report
+                                based
+                                on the solutions to the problems together with Log forms at the end of the fourth
+                                Semester.
+                                An oral examination on this report will be held.
+                            </li>
+                            <li>By the end of the Fourth Semester, each student will be required to complete his/her
+                                report
+                                on Independent Studies in Cybersecurity and submit it to the School within the specified
+                                period. However it shall not be submitted unless the course Coordinator has certified
+                                that
+                                student has solved the all given problems. The student shall also ensure that the report
+                                fits in to the prescribed format.
+                            </li>
+                            <li>A student shall be deemed to have passed the Oral Examination for the Independent
+                                Studies in
+                                Cybersecurity if he satisfies the following requirements.
+                            </li>
+                            <div style="padding-left: 10%">
+                                <li>The Board of Examiners should satisfies that the report of Independent Studies in
+                                    Cybersecurity
+                                    demonstrates the candidate’s knowledge of the methods of problem solving, his
+                                    competence to
+                                    present
+                                    material systematically and his ability to analyse and interpret results/data, as
+                                    are
+                                    generally applicable
+                                    to a Master of Science Degree of the University and in particular, to such a Degree
+                                    in
+                                    Cybersecurity.
+                                </li>
+                                <li>Student should satisfy the requirements of the relevant By-Laws if applicable.</li>
+                            </div>
+                        </ul>
+
+
+                        </ul>
+                    </div>
                 </div>
             </div>
-
-
-            <div class="shortcode1">
-                <div class="frontpage-block">
-                    <h6>Independent Study</h6>
-                    <ul>
-                        <li>The Independent Studies in Cybersecurity in the fourth Semesters of the Programme shall
-                            consist of minimum of ten (10) studies and maximum of fifteen (15) studies which solve the
-                            given set of problems and submission of a report based on the solutions to the problems.
-                        </li>
-                        <li>Each student who undertake Independent Studies in Cybersecurity should submit a Report based
-                            on the solutions to the problems together with Log forms at the end of the fourth Semester.
-                            An oral examination on this report will be held.
-                        </li>
-                        <li>By the end of the Fourth Semester, each student will be required to complete his/her report
-                            on Independent Studies in Cybersecurity and submit it to the School within the specified
-                            period. However it shall not be submitted unless the course Coordinator has certified that
-                            student has solved the all given problems. The student shall also ensure that the report
-                            fits in to the prescribed format.
-                        </li>
-                        <li>A student shall be deemed to have passed the Oral Examination for the Independent Studies in
-                            Cybersecurity if he satisfies the following requirements.
-                        </li>
-<div style="padding-left: 10%">
-                        <li>The Board of Examiners should satisfies that the report of Independent Studies in
-                            Cybersecurity
-                            demonstrates the candidate’s knowledge of the methods of problem solving, his competence to
-                            present
-                            material systematically and his ability to analyse and interpret results/data, as are
-                            generally applicable
-                            to a Master of Science Degree of the University and in particular, to such a Degree in
-                            Cybersecurity.
-                        </li>
-                        <li>Student should satisfy the requirements of the relevant By-Laws if applicable.</li>
-</div>
-                    </ul>
-
-
-                    </ul>
-                </div>
-            </div>
-
 
             <div>
                 <hr>
-                <h3>  ELIGIBILITY CRITERIA</h3>
+                <h3> ELIGIBILITY CRITERIA</h3>
+                <button onclick="toggleDivEligibility()">Try it</button>
                 <hr>
             </div>
-
+<div id="div_eligibility">
             <div class="shortcode1">
                 <div class="frontpage-block">
                     <ul>
                         <li>
-                            A Student who has obtained minimum of 2.00 GPA for the first and second semester courses is qualified to follow the third
-                            and fourth semester courses. The best minimum set of courses that exceeds or adds up to 12 credits in the first and second
-                            semester are considered for the calculation of GPA to qualify the third and fourth semester courses.
+                            A Student who has obtained minimum of 2.00 GPA for the first and second semester courses is
+                            qualified to follow the third
+                            and fourth semester courses. The best minimum set of courses that exceeds or adds up to 12
+                            credits in the first and second
+                            semester are considered for the calculation of GPA to qualify the third and fourth semester
+                            courses.
                         </li>
-                        <li>The best minimum set of courses that exceeds or adds up to 20 credits are considered for the calculation of GPA to qualify to obtain the Postgraduate Certificate in Master of Cybersecurity.</li>
-                        <li>The best minimum set of courses that exceeds or adds up to 25 credits are considered for the calculation of GPA to qualify to obtain the Postgraduate Diploma in Master of Cybersecurity.</li>
-                        <li>The best minimum set of courses that exceeds or adds up to 45 credits in the all four semesters are considered for the calculation of GPA to obtain the Degree of Master of Cybersecurity.</li>
+                        <li>The best minimum set of courses that exceeds or adds up to 20 credits are considered for the
+                            calculation of GPA to qualify to obtain the Postgraduate Certificate in Master of
+                            Cybersecurity.
+                        </li>
+                        <li>The best minimum set of courses that exceeds or adds up to 25 credits are considered for the
+                            calculation of GPA to qualify to obtain the Postgraduate Diploma in Master of Cybersecurity.
+                        </li>
+                        <li>The best minimum set of courses that exceeds or adds up to 45 credits in the all four
+                            semesters are considered for the calculation of GPA to obtain the Degree of Master of
+                            Cybersecurity.
+                        </li>
 
 
                     </ul>
                 </div>
             </div>
+</div>
 
             <div>
                 <hr>
-                <h3>   AWARD OF THE DEGREE/ POSTGRADUATE DIPLOMA/POSTGRADUATE CERTIFICATE</h3>
+                <h3> AWARD OF THE DEGREE/ POSTGRADUATE DIPLOMA/POSTGRADUATE CERTIFICATE</h3>
+                <button onclick="toggleDivAward()">Try it</button>
                 <hr>
             </div>
+            <div id="div_award">
             <div class="shortcode1">
                 <div class="frontpage-block">
-                    <ul><li> 19 ************ A Student who has satisfied the following conditions shall be deemed to have qualified to obtain the Degree of Master of Cybersecurity.</li>
-                 <div style="padding-left: 10%">
-                   <ol>
-                       <li>Has obtained a minimum of 45 credits.</li>
-                       <li>Has obtained a minimum of 2.00 of GPA. (The best minimum set of courses that exceeds or adds up to 45 credits are 	considered for the calculation of GPA.)</li>
-<li>Has obtained a pass (C) for the Independent Studies in Cybersecurity.</li>
-                   </ol>
-                 </div>
-                    <li>A student qualifying for the award of a degree by completing all the 	above relevant requirements shall also be qualified for the award of a 	DISTINCTION pass if he/she has obtained a minimum of 3.5 GPA. </li>
-                   <hr>
-                        <li>20 ***************A student who satisfies the following conditions shall be deemed to 	have qualify to obtain the Postgraduate Diploma in Cybersecurity.</li>
-                    <div style="padding-left: 10%">
-                        <ol>
-                        <li>Has obtained a minimum of 25 credits.</li>
-                        <li>Has obtained a minimum of 2.00 of GPA. (The best minimum set of courses that exceeds or add up to 25 credits are considered for the calculation GPA)</li>
-                        </ol>
-                    </div>
-                        <li>A student can opt to obtain the Postgraduate Diploma in Cybersecurity after obtaining minimum of 25 credits. </li>
-                        <li>A student who satisfies the requirement in (19) will not be eligible to obtain the Postgraduate Diploma in Cybersecurity.</li>
+                    <ul>
+                        <li> 19 ************ A Student who has satisfied the following conditions shall be deemed to
+                            have qualified to obtain the Degree of Master of Cybersecurity.
+                        </li>
+                        <div style="padding-left: 10%">
+                            <ol>
+                                <li>Has obtained a minimum of 45 credits.</li>
+                                <li>Has obtained a minimum of 2.00 of GPA. (The best minimum set of courses that exceeds
+                                    or adds up to 45 credits are considered for the calculation of GPA.)
+                                </li>
+                                <li>Has obtained a pass (C) for the Independent Studies in Cybersecurity.</li>
+                            </ol>
+                        </div>
+                        <li>A student qualifying for the award of a degree by completing all the above relevant
+                            requirements shall also be qualified for the award of a DISTINCTION pass if he/she has
+                            obtained a minimum of 3.5 GPA.
+                        </li>
+                        <hr>
+                        <li>20 ***************A student who satisfies the following conditions shall be deemed to have
+                            qualify to obtain the Postgraduate Diploma in Cybersecurity.
+                        </li>
+                        <div style="padding-left: 10%">
+                            <ol>
+                                <li>Has obtained a minimum of 25 credits.</li>
+                                <li>Has obtained a minimum of 2.00 of GPA. (The best minimum set of courses that exceeds
+                                    or add up to 25 credits are considered for the calculation GPA)
+                                </li>
+                            </ol>
+                        </div>
+                        <li>A student can opt to obtain the Postgraduate Diploma in Cybersecurity after obtaining
+                            minimum of 25 credits.
+                        </li>
+                        <li>A student who satisfies the requirement in (19) will not be eligible to obtain the
+                            Postgraduate Diploma in Cybersecurity.
+                        </li>
 
                     </ul>
                     <hr>
-                    <li>  A student who satisfies the following conditions shall be deemed to have qualified to obtain the
+                    <li> A student who satisfies the following conditions shall be deemed to have qualified to obtain
+                        the
                         <b>Postgraduate Certificate in Cybersecurity.</b></li>
                     <div style="padding-left: 10%">
                         <ol>
                             <li>Has completed a minimum of 20 credits.</li>
-                            <li>Has obtained a minimum of 2.00 of GPA. (The best minimum set of courses that exceeds or add up to 20 credits are considered for the calculation GPA)</li>
+                            <li>Has obtained a minimum of 2.00 of GPA. (The best minimum set of courses that exceeds or
+                                add up to 20 credits are considered for the calculation GPA)
+                            </li>
                         </ol>
-                        <li>A student can opt to obtain the Postgraduate Certificate in Cybersecurity after obtaining minimum of 20 credits. </li>
-                        <li>A student who satisfies the requirement in (19) or (20) will not be eligible to obtain the Postgraduate Certificate in Cybersecurity.</li>
+                        <li>A student can opt to obtain the Postgraduate Certificate in Cybersecurity after obtaining
+                            minimum of 20 credits.
+                        </li>
+                        <li>A student who satisfies the requirement in (19) or (20) will not be eligible to obtain the
+                            Postgraduate Certificate in Cybersecurity.
+                        </li>
                     </div>
                     <hr>
                     <ul>
                         <li>
-                        A student who has satisfied the condition given in Section (19) shall be entitled to the award of the Degree of Master of Cybersecurity if he has 	satisfied all the other requirements of the relevant By-Laws.
+                            A student who has satisfied the condition given in Section (19) shall be entitled to the
+                            award of the Degree of Master of Cybersecurity if he has satisfied all the other
+                            requirements of the relevant By-Laws.
                         </li>
-                        <li>A student who has satisfied the condition given in Section (20) shall be entitled to the award of the Postgraduate Diploma in Cybersecurity if he has satisfied all the other requirements of the relevant By-Laws.</li>
-                        <li>A student who has satisfied the condition given in Section (21) shall be entitled to the award of the Postgraduate Certificate in Cybersecurity if he has satisfied all the other requirements of the relevant By-Laws.</li>
-                        <li>A student who exercises the option given to him by the relevant By-Laws shall be entitled to the award of the Postgraduate Diploma in Cybersecurity if 	he has satisfied the condition given in Section (20) and has satisfied all the other requirements of the relevant By-Laws.</li>
-                        <li>A student who exercises the option given to him by the relevant By-Laws shall be entitled to the award of the Postgraduate Certificate in Cybersecurity if he has satisfied the condition given in Section (21) and has satisfied all the other requirements of the relevant By-Laws.</li>
+                        <li>A student who has satisfied the condition given in Section (20) shall be entitled to the
+                            award of the Postgraduate Diploma in Cybersecurity if he has satisfied all the other
+                            requirements of the relevant By-Laws.
+                        </li>
+                        <li>A student who has satisfied the condition given in Section (21) shall be entitled to the
+                            award of the Postgraduate Certificate in Cybersecurity if he has satisfied all the other
+                            requirements of the relevant By-Laws.
+                        </li>
+                        <li>A student who exercises the option given to him by the relevant By-Laws shall be entitled to
+                            the award of the Postgraduate Diploma in Cybersecurity if he has satisfied the condition
+                            given in Section (20) and has satisfied all the other requirements of the relevant By-Laws.
+                        </li>
+                        <li>A student who exercises the option given to him by the relevant By-Laws shall be entitled to
+                            the award of the Postgraduate Certificate in Cybersecurity if he has satisfied the condition
+                            given in Section (21) and has satisfied all the other requirements of the relevant By-Laws.
+                        </li>
                     </ul>
                     <hr>
-
-
 
 
                     <!--need to add fro 22  page 6 -->
                 </div>
             </div>
-
-
-
+            </div>
 
             <p style="text-align: justify;"><strong>University of Colombo School of Computing (UCSC) is government own
                 leading academic institute in the south Asian region in the area of computer science. In striving for
